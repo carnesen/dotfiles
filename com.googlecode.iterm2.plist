@@ -43,7 +43,7 @@
 	<key>FocusFollowsMouse</key>
 	<false/>
 	<key>FsTabDelay</key>
-	<real>1</real>
+	<real>0.10000000149011612</real>
 	<key>HiddenAFRStrokeThickness</key>
 	<real>0.0</real>
 	<key>HiddenAdvancedFontRendering</key>
@@ -51,7 +51,7 @@
 	<key>HideActivityIndicator</key>
 	<false/>
 	<key>HideMenuBarInFullscreen</key>
-	<true/>
+	<false/>
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
@@ -109,10 +109,15 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
 	<string>269 110 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>162 91 890 651 0 0 1440 877 </string>
+	<string>162 91 892 652 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -215,11 +220,11 @@
 			<key>Ansi 4 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>1</real>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.63916498422622681</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.5032811164855957</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -841,10 +846,12 @@
 			<string>/Users/carnesen</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>461292618.007541</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>461292618.007855</real>
+	<real>462943910.42075098</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -907,15 +914,17 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-08-15T00:49:56Z</date>
+	<date>2015-09-03T01:17:45Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
-	<false/>
+	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.40000000596046448</real>
 	<key>SwitchTabModifier</key>
@@ -933,9 +942,9 @@
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
-	<false/>
-	<key>UseCompactLabel</key>
 	<true/>
+	<key>UseCompactLabel</key>
+	<false/>
 	<key>UseLionStyleFullscreen</key>
 	<true/>
 	<key>WebKitDefaultFontSize</key>
@@ -948,6 +957,10 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>2.1.1</string>
 </dict>
