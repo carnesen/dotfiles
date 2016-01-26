@@ -26,5 +26,13 @@ alias gs='git status'
 alias ga='git add'
 alias gc='git commit -a -m'
 alias gp='git push'
-alias gl='git log --pretty=oneline'
+alias gl='git log --oneline'
 alias gb='git blame --date=short'
+alias gr='git fetch; git stash; git rebase; git stash pop'
+alias md='mongod --config /usr/local/etc/mongod.conf'
+alias mdl='tail -f /usr/local/var/log/mongodb/mongo.log'
+alias pg='postgres'
+
+export PGDATA=/usr/local/var/postgres
+
+export PATH="./node_modules/.bin:$PATH"
