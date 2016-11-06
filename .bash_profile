@@ -37,6 +37,6 @@ alias md='mongod --config /usr/local/etc/mongod.conf'
 alias mdl='tail -f /usr/local/var/log/mongodb/mongo.log'
 alias pg='postgres'
 
-export PGDATA=/usr/local/var/postgres
-
 export PATH="./node_modules/.bin:$PATH"
+
+tt() { mv "$@" ~/.Trash; }
