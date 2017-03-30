@@ -36,8 +36,8 @@ alias gr='git fetch; git stash; git rebase; git stash pop'
 alias md='mongod --config /usr/local/etc/mongod.conf'
 alias mdl='tail -f /usr/local/var/log/mongodb/mongo.log'
 alias pg='postgres'
-alias tf = terraform
-alias ws = webstorm
+alias tf=terraform
+alias ws=webstorm
 
 export PATH="./node_modules/.bin:$PATH"
 
