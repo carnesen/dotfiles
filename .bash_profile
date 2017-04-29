@@ -23,6 +23,7 @@ alias untar='tar xvfz'
 alias more='less'
 alias ap='ansible-playbook'
 alias an=ansible
+alias g=git
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit -a -m'
@@ -42,3 +43,5 @@ alias ws=webstorm
 export PATH="./node_modules/.bin:$PATH"
 
 tt() { mv "$@" ~/.Trash; }
+
+use() { cp ~/.aws/credentials.$1 ~/.aws/credentials; }
