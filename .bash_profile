@@ -21,23 +21,14 @@ alias dp='. ~/.bash_profile'
 alias vip='vi ~/.bash_profile'
 alias untar='tar xvfz'
 alias more='less'
-alias ap='ansible-playbook'
-alias an=ansible
 alias g=git
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit -a -m'
 alias gh='git checkout'
-alias ghm='git checkout master'
 alias gp='git push'
 alias gpu='git push -u origin'
 alias gl='git log --oneline'
-alias gb='git blame --date=short'
-alias gr='git fetch; git stash; git rebase; git stash pop'
-alias md='mongod --config /usr/local/etc/mongod.conf'
-alias mdl='tail -f /usr/local/var/log/mongodb/mongo.log'
-alias pg='postgres'
-alias tf=terraform
 alias ws=webstorm
 
 export PATH="./node_modules/.bin:$PATH"
