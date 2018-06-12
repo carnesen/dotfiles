@@ -33,4 +33,12 @@ alias chrome='open -a Google\ Chrome --args --disable-web-security --user-data-d
 alias vsc='open -a /Applications/Visual\ Studio\ Code.app/'
 export PATH="~/bin:./node_modules/.bin:$PATH"
 
-tt() { mv "$@" ~/.Trash; }
+tt() {
+  mv "$@" ~/.Trash
+}
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="\[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
