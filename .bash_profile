@@ -1,6 +1,6 @@
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+  . /etc/bashrc
 fi
 
 shopt -s histappend
@@ -10,9 +10,9 @@ export HISTCONTROL=erasedups
 export PROMPT_COMMAND='history -a'
 
 alias la='ls -al'
+alias l='la'
 alias lt='ls -ltr'
 alias ld='ls -ld'
-alias l='la'
 alias ..='cd ..; l'
 alias ...='cd ../..; l'
 alias ....='cd ../../..; l'
@@ -27,12 +27,10 @@ alias ga='git add'
 alias gc='git commit -a -m'
 alias gh='git checkout'
 alias gp='git push'
-alias gpu='git push -u origin'
 alias gl='git log --oneline'
-alias ws=webstorm
 
-export PATH="./node_modules/.bin:$PATH"
+alias chrome='open -a Google\ Chrome --args --disable-web-security --user-data-dir'
+alias vsc='open -a /Applications/Visual\ Studio\ Code.app/'
+export PATH="~/bin:./node_modules/.bin:$PATH"
 
 tt() { mv "$@" ~/.Trash; }
-
-use() { cp ~/.aws/credentials.$1 ~/.aws/credentials; }
