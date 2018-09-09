@@ -28,7 +28,7 @@ alias gc='git commit -a -m'
 alias gh='git checkout'
 alias gp='git push'
 alias gl='git log --oneline'
-
+alias s='open http://localhost:8000 & python -m SimpleHTTPServer'
 alias chrome='open -a Google\ Chrome --args --disable-web-security --user-data-dir'
 alias vsc='open -a /Applications/Visual\ Studio\ Code.app/'
 export PATH="~/bin:./node_modules/.bin:$PATH"
