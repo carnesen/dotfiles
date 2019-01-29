@@ -1,21 +1,18 @@
 {
   "window.zoomLevel": 1,
-  // Set editor defaults
   "editor.formatOnSave": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
   "editor.minimap.enabled": false,
-  "clang-format.executable": "/Users/chrisarnesen/GitHub/nodejs-dns/node_modules/.bin/clang-format",
   "[json]": {
     "editor.formatOnSave": true,
-    "files.insertFinalNewline": true,
+    "files.insertFinalNewline": true
   },
   "[jsonc]": {
     "editor.formatOnSave": true,
-    "files.insertFinalNewline": true,
+    "files.insertFinalNewline": true
   },
-  // tslint
   "tslint.enable": true,
   "tslint.alwaysShowStatus": false,
   "tslint.run": "onType",
