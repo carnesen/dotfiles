@@ -31,6 +31,15 @@ alias gl='git log --oneline'
 alias s='open http://localhost:8000 & python -m SimpleHTTPServer'
 alias chrome='open -a Google\ Chrome --args --disable-web-security --user-data-dir'
 alias vsc='open -a /Applications/Visual\ Studio\ Code.app/'
+alias sb='/Users/chrisarnesen/bitcoin-0.17.0/bin/bitcoind'
+alias b='/Users/chrisarnesen/bitcoin-0.17.0/bin/bitcoin-cli'
+alias kb='killall bitcoind'
+alias rb='kb; sleep 1; sb'
+alias lb='lsof -p $(pidof bitcoind)'
+alias vb='vi "/Users/chrisarnesen/Library/Application Support/Bitcoin/bitcoin.conf"'
+alias cb='cd "/Users/chrisarnesen/Library/Application Support/Bitcoin"'
+alias gb='b getnetworkinfo | grep subversion'
+
 export PATH="~/bin:./node_modules/.bin:$PATH"
 
 tt() {
