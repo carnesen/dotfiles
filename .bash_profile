@@ -9,6 +9,8 @@ export HISTIGNORE='&:ls:cd ~:cd ..:[bf]g:exit:h:history'
 export HISTCONTROL=erasedups
 export PROMPT_COMMAND='history -a'
 
+alias lai='l node_modules/@alwaysai/'
+
 alias cli='ts-node src/index.ts'
 alias la='ls -al'
 alias l='la'
