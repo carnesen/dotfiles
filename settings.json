@@ -1,10 +1,19 @@
 {
-  "window.zoomLevel": 1,
   "editor.formatOnSave": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
   "editor.minimap.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  },
   "[json]": {
     "editor.formatOnSave": true,
     "files.insertFinalNewline": true
@@ -13,15 +22,22 @@
     "editor.formatOnSave": true,
     "files.insertFinalNewline": true
   },
-  "tslint.enable": true,
-  "tslint.alwaysShowStatus": false,
-  "tslint.run": "onType",
-  "tslint.autoFixOnSave": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.run": "onType",
+  "tslint.suppressWhileTypeErrorsPresent": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.newWindowDimensions": "maximized",
+  "explorer.confirmDragAndDrop": false,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": false,
+  "html.format.endWithNewline": true,
+  "terminal.integrated.fontSize": 14,
+  "editor.fontSize": 14,
+  "window.zoomLevel": 2,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "cSpell.userWords": [
     "addnode",
+    "alwaysai",
     "arnesen",
     "arrify",
     "bitcoind",
@@ -61,11 +77,5 @@
     "upsert",
     "zeit",
     "zonefile"
-  ],
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.newWindowDimensions": "maximized",
-  "explorer.confirmDragAndDrop": false,
-  "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": false,
-  "ruby.intellisense": "rubyLocate",
+  ]
 }
