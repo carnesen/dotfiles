@@ -43,6 +43,7 @@ alias vb='vi "/Users/chrisarnesen/Library/Application Support/Bitcoin/bitcoin.co
 alias cb='cd "/Users/chrisarnesen/Library/Application Support/Bitcoin"'
 alias gb='b getnetworkinfo | grep subversion'
 alias ud='rm -rf node_modules/ package-lock.json && npm-check-updates --upgrade && npm install && npm test'
+alias rd='rm -rf node_modules/ package-lock.json && npm install'
 
 export PATH="~/bin:./node_modules/.bin:$PATH"
 
