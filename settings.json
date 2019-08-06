@@ -75,7 +75,10 @@
     "subdomain",
     "testnet",
     "upsert",
+    "virtualenv",
     "zeit",
     "zonefile"
-  ]
+  ],
+  "workbench.settings.editor": "json",
+  "breadcrumbs.enabled": false
 }
