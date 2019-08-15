@@ -35,7 +35,9 @@
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.userWords": [],
+  "cSpell.userWords": [
+    "alwayscli"
+  ],
   "workbench.settings.editor": "json",
   "breadcrumbs.enabled": false
 }
