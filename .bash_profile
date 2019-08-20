@@ -44,6 +44,7 @@ alias cb='cd "/Users/chrisarnesen/Library/Application Support/Bitcoin"'
 alias gb='b getnetworkinfo | grep subversion'
 alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep dev,prod --upgrade && npm install && npm test'
 alias rd='rm -rf node_modules/ && npm install'
+alias p='npx prettier --write --trailing-comma all --single-quote'
 
 export PATH="~/bin:./node_modules/.bin:$PATH"
 
