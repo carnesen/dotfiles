@@ -45,6 +45,11 @@ alias gb='b getnetworkinfo | grep subversion'
 alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep dev,prod --upgrade && npm install && npm test'
 alias rd='rm -rf node_modules/ && npm install'
 alias p='npx prettier --write --trailing-comma all --single-quote'
+it() {
+  DIR=${1:-.}
+  echo $DIR
+  open -a iTerm $DIR
+}
 
 export PATH="~/bin:./node_modules/.bin:$PATH"
 
