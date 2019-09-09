@@ -47,7 +47,7 @@ alias rd='rm -rf node_modules/ && npm install'
 alias p='npx prettier --write --trailing-comma all --single-quote'
 it() {
   DIR=${1:-.}
-  echo $DIR
+  echo "Opening $DIR in iTerm"
   open -a iTerm $DIR
 }
 
