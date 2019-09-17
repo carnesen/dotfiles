@@ -10,6 +10,10 @@
   "[javascript]": {
     "editor.formatOnSave": true
   },
+  "prettier.endOfLine": "lf",
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 90,
+  "prettier.trailingComma": "all",
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
