@@ -43,5 +43,6 @@
     "alwayscli"
   ],
   "workbench.settings.editor": "json",
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "workbench.editor.showTabs": true
 }
