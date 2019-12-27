@@ -5,10 +5,11 @@
   "editor.detectIndentation": false,
   "editor.minimap.enabled": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.tslint": true
+    "source.fixAll.tslint": true,
+    "source.fixAll.eslint": true
   },
   "[javascript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "prettier.endOfLine": "lf",
   "prettier.singleQuote": true,
@@ -19,11 +20,11 @@
     "editor.wordWrapColumn": 80
   },
   "[json]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "files.insertFinalNewline": true
   },
   "[jsonc]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "files.insertFinalNewline": true
   },
   "tslint.suppressWhileTypeErrorsPresent": true,
@@ -35,14 +36,16 @@
   "html.format.endWithNewline": true,
   "terminal.integrated.fontSize": 14,
   "editor.fontSize": 14,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.userWords": [
-    "alwayscli"
-  ],
+  "cSpell.userWords": [],
   "workbench.settings.editor": "json",
   "breadcrumbs.enabled": false,
-  "workbench.editor.showTabs": true
+  "workbench.editor.showTabs": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "java.configuration.checkProjectSettingsExclusions": false
 }
