@@ -5,11 +5,15 @@
   "editor.detectIndentation": false,
   "editor.minimap.enabled": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.tslint": true,
+    // "source.fixAll.tslint": true,
     "source.fixAll.eslint": true
   },
+  "editor.rulers": [120],
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
   },
   "prettier.endOfLine": "lf",
   "prettier.singleQuote": true,
