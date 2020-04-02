@@ -9,6 +9,8 @@ export HISTIGNORE='&:ls:cd ~:cd ..:[bf]g:exit:h:history'
 export HISTCONTROL=erasedups
 export PROMPT_COMMAND='history -a'
 
+alias pa='. $(pipenv --venv)/bin/activate'
+alias g7='git rev-parse --short=7 HEAD'
 alias recommit='git commit --all --amend --no-edit'
 alias cli='ts-node src/index.ts'
 alias la='ls -al'

@@ -15,6 +15,10 @@
   "[typescript]": {
     "editor.formatOnSave": true
   },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
+  },
   "prettier.endOfLine": "lf",
   "prettier.singleQuote": true,
   "prettier.printWidth": 90,
@@ -51,5 +55,10 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.errors.incompleteClasspath.severity": "ignore",
-  "java.configuration.checkProjectSettingsExclusions": false
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "python.jediEnabled": false,
+  "python.linting.pylintArgs": [
+    "--rcfile=/Users/chrisarnesen/AuptiX/work/dev/bin/.pylintrc"
+  ],
+  "python.formatting.blackArgs": ["--line-length", "100"]
 }
