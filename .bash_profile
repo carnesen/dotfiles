@@ -56,3 +56,8 @@ function tt() {
 function parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+
+function push() {
+  local branch=$(git rev-parse --abbrev-ref HEAD)
+  git push --set-upstream origin ${branch}
+}
