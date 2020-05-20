@@ -3,40 +3,50 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
+# https://apple.stackexchange.com/questions/371997/suppressing-zsh-verbose-message-in-macos-catalina
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Add ~/bin and the current directory's Node.js module executables to PATH
+export PATH="~/bin:./node_modules/.bin:$PATH"
+
+# Colorized terminal
+export CLICOLOR=1
+
+# Customize bash history
 shopt -s histappend
 shopt -s cmdhist
-export CLICOLOR=1
 export HISTCONTROL=erasedups
 export HISTIGNORE='l:ls:cd:..:...:....:exit:h:history'
 export HISTSIZE=10000
 export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export PROMPT_COMMAND='history -a'
+
+# Use Visual Studio Code as default shell editor
 export EDITOR='code --wait'
-export PATH="~/bin:./node_modules/.bin:$PATH"
+
+# Set up colored prompt of the form "dotfiles (master) $ " where master is the current Git branch name
+function parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 export PS1="\[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
+# Python helpers
+alias pa='. $(pipenv --venv)/bin/activate' # "pipenv activate"
+
+# General-purpose helpers
 alias h='history'
-alias pa='. $(pipenv --venv)/bin/activate'
-alias g7='git rev-parse --short=7 HEAD'
-alias recommit='git commit --all --amend --no-edit'
-alias la='ls -al'
-alias l='la'
-alias lt='ls -ltr'
-alias ld='ls -ld'
+alias l='ls -alFGh'
 alias ..='cd ..; l'
 alias ...='cd ../..; l'
 alias ....='cd ../../..; l'
 alias .....='cd ../../../..; l'
-alias dp='. ~/.bash_profile'
-alias ep='edit ~/.bash_profile'
+alias sp='. ~/.bash_profile' # "source profile"
+alias ep='edit ~/.bash_profile' # "edit profile"
 alias untar='tar xvfz'
 alias more='less'
-alias g='git'
-alias gs='git status'
-alias s='open http://localhost:8000 & python -m SimpleHTTPServer'
-alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep dev,prod --upgrade && npm install && npm test'
-alias rd='rm -rf node_modules/ && npm install'
-alias prettier='npx prettier --write --trailing-comma all --single-quote'
+
+# Generate a random six-charater lowercase string
+alias rand='cat /dev/random | LC_CTYPE=C tr -dc "[:lower:]" | head -c 6'
 
 function edit() {
   echo "Running \"${EDITOR} $*\". This command will terminate when the editor closes the file..."
@@ -49,15 +59,30 @@ function iterm() {
   open -a iTerm $DIR
 }
 
+# Move the specified paths to a MacOS trash folder. Is faster than "rm -rf" if large data.
 function tt() {
-  mv "$@" ~/.Trash
+  local random_string=$(rand)
+  local trash_dir=~/.Trash/${random_string}/
+  mkdir -p "${trash_dir}"
+  mv "$@" "${trash_dir}"
 }
 
-function parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+# Git aliases
+alias g='git'
+alias gs='git status'
+alias gfp='git push --force-with-lease' # "git force push"
+alias g7='git rev-parse --short=7 HEAD'
+alias recommit='git commit --all --amend --no-edit'
 
 function push() {
   local branch=$(git rev-parse --abbrev-ref HEAD)
-  git push --set-upstream origin ${branch}
+  git push --set-upstream origin ${branch} "$@"
 }
+
+# Open a Python http server on the current or specified directory (e.g. "s ~/GitHub/www/dist")
+alias s='open http://localhost:8000 & python3 -m http.server'
+
+# JavaScript development
+alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep dev,prod --upgrade && npm install && npm test'
+alias rd='rm -rf node_modules/ && npm install'
+alias prettier='npx prettier --write --trailing-comma all --single-quote'
