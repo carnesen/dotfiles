@@ -8,7 +8,7 @@ export CLICOLOR=1
 export HISTIGNORE='&:ls:cd ~:cd ..:[bf]g:exit:h:history'
 export HISTCONTROL=erasedups
 export PROMPT_COMMAND='history -a'
-
+export EDITOR='code --wait'
 alias pa='. $(pipenv --venv)/bin/activate'
 alias g7='git rev-parse --short=7 HEAD'
 alias recommit='git commit --all --amend --no-edit'
@@ -29,9 +29,6 @@ alias g=git
 alias gs='git status'
 alias s='open http://localhost:8000 & python -m SimpleHTTPServer'
 alias chrome='open -a Google\ Chrome --args --disable-web-security --user-data-dir'
-alias vsc='open -a /Applications/Visual\ Studio\ Code.app/'
-alias sb='/Users/chrisarnesen/bitcoin-core-0.17.0/bin/bitcoind'
-alias b='/Users/chrisarnesen/bitcoin-core-0.17.0/bin/bitcoin-cli'
 alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep dev,prod --upgrade && npm install && npm test'
 alias rd='rm -rf node_modules/ && npm install'
 alias p='npx prettier --write --trailing-comma all --single-quote'
