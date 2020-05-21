@@ -5,37 +5,34 @@
   "editor.detectIndentation": false,
   "editor.minimap.enabled": false,
   "editor.codeActionsOnSave": {
-    // "source.fixAll.tslint": true,
     "source.fixAll.eslint": true
   },
-  "editor.rulers": [120],
+  "editor.rulers": [
+    90,
+    120
+  ],
   "[javascript]": {
     "editor.formatOnSave": true
   },
-  "[typescript]": {
-    "editor.formatOnSave": true
+  "[json]": {
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
   },
   "[python]": {
     "editor.tabSize": 4,
     "editor.formatOnSave": true
   },
-  "prettier.endOfLine": "lf",
-  "prettier.singleQuote": true,
-  "prettier.printWidth": 90,
-  "prettier.trailingComma": "all",
-  "[markdown]": {
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80
+  "[typescript]": {
+    "editor.formatOnSave": true
   },
-  "[json]": {
-    "editor.formatOnSave": false,
-    "files.insertFinalNewline": true
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": false,
-    "files.insertFinalNewline": true
-  },
-  "tslint.suppressWhileTypeErrorsPresent": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.newWindowDimensions": "maximized",
   "explorer.confirmDragAndDrop": false,
@@ -44,21 +41,25 @@
   "html.format.endWithNewline": true,
   "terminal.integrated.fontSize": 14,
   "editor.fontSize": 14,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.userWords": [],
+  "cSpell.userWords": [
+    "arnesen",
+    "carnesen"
+  ],
   "workbench.settings.editor": "json",
   "breadcrumbs.enabled": false,
   "workbench.editor.showTabs": true,
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "java.errors.incompleteClasspath.severity": "ignore",
-  "java.configuration.checkProjectSettingsExclusions": false,
   "python.jediEnabled": false,
   "python.linting.pylintArgs": [
     "--rcfile=/Users/chrisarnesen/AuptiX/work/dev/bin/.pylintrc"
   ],
-  "python.formatting.blackArgs": ["--line-length", "100"]
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "100"
+  ],
+  "editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace"
 }
