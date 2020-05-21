@@ -10,6 +10,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -50,6 +52,107 @@
 	<false/>
 	<key>FsTabDelay</key>
 	<real>0.10000000149011612</real>
+	<key>GlobalKeyMap</key>
+	<dict>
+		<key>0x19-0x60000</key>
+		<dict>
+			<key>Action</key>
+			<integer>39</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x9-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>32</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf700-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>7</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf701-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>6</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf702-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>2</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf702-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>33</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>0</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>34</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf729-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>5</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72b-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>4</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72c-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>9</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72c-0x20000</key>
+		<dict>
+			<key>Action</key>
+			<integer>9</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72d-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>8</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72d-0x20000</key>
+		<dict>
+			<key>Action</key>
+			<integer>8</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HiddenAFRStrokeThickness</key>
@@ -141,10 +244,12 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
+	<string>532 639 616 174 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 493 620 392 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 890 652 0 0 1680 1027 </string>
+	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -540,9 +645,9 @@
 				<key>0xf702-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x44</string>
+					<string>B</string>
 				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
@@ -568,9 +673,9 @@
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x43</string>
+					<string>F</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1630,10 +1735,13 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.8beta3</string>
-		<string>3.3.7beta4</string>
-		<string>3.3.8beta2</string>
 		<string>3.3.6</string>
+		<string>3.3.7beta4</string>
+		<string>3.3.10beta3</string>
+		<string>3.3.8beta3</string>
+		<string>3.3.10beta4</string>
+		<string>3.3.8beta2</string>
+		<string>3.3.10beta1</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -1642,14 +1750,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{283, 837}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>1446FA0B-AF7A-410D-B65F-9D308D82F3B2</string>
 	<key>NoSyncLastTipTime</key>
-	<real>600713053.86046398</real>
+	<real>605466703.59923899</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>15</integer>
+	<integer>30</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2380,46 +2488,85 @@
 	<real>593378042.958745</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>0017</string>
-		<string>0029</string>
-		<string>0001</string>
-		<string>0013</string>
-		<string>0025</string>
-		<string>0037</string>
-		<string>0021</string>
-		<string>0033</string>
-		<string>0006</string>
-		<string>0018</string>
-		<string>0002</string>
-		<string>0014</string>
-		<string>0026</string>
-		<string>0010</string>
-		<string>0022</string>
-		<string>000</string>
-		<string>0034</string>
 		<string>0030</string>
-		<string>0007</string>
-		<string>0019</string>
-		<string>0003</string>
-		<string>0015</string>
-		<string>0027</string>
-		<string>0011</string>
 		<string>0023</string>
-		<string>0035</string>
-		<string>0031</string>
-		<string>0008</string>
-		<string>0004</string>
 		<string>0016</string>
-		<string>0028</string>
-		<string>0000</string>
-		<string>0012</string>
-		<string>0024</string>
-		<string>0036</string>
-		<string>0020</string>
-		<string>0032</string>
 		<string>0009</string>
-		<string>0005</string>
+		<string>0059</string>
+		<string>0066</string>
+		<string>0073</string>
+		<string>0002</string>
+		<string>0045</string>
 		<string>0038</string>
+		<string>0052</string>
+		<string>0017</string>
+		<string>0031</string>
+		<string>0024</string>
+		<string>0067</string>
+		<string>0074</string>
+		<string>0010</string>
+		<string>0046</string>
+		<string>0003</string>
+		<string>0039</string>
+		<string>0053</string>
+		<string>0060</string>
+		<string>0025</string>
+		<string>0018</string>
+		<string>0032</string>
+		<string>0068</string>
+		<string>0011</string>
+		<string>0047</string>
+		<string>0004</string>
+		<string>0054</string>
+		<string>0061</string>
+		<string>0033</string>
+		<string>0026</string>
+		<string>0019</string>
+		<string>0040</string>
+		<string>0069</string>
+		<string>0076</string>
+		<string>0012</string>
+		<string>0048</string>
+		<string>0005</string>
+		<string>0055</string>
+		<string>0062</string>
+		<string>0041</string>
+		<string>0034</string>
+		<string>0027</string>
+		<string>0077</string>
+		<string>0013</string>
+		<string>0049</string>
+		<string>0006</string>
+		<string>0020</string>
+		<string>0056</string>
+		<string>0063</string>
+		<string>0070</string>
+		<string>0042</string>
+		<string>0035</string>
+		<string>0028</string>
+		<string>0021</string>
+		<string>0014</string>
+		<string>0007</string>
+		<string>0057</string>
+		<string>0064</string>
+		<string>0071</string>
+		<string>0000</string>
+		<string>0029</string>
+		<string>0050</string>
+		<string>0043</string>
+		<string>0036</string>
+		<string>0022</string>
+		<string>0015</string>
+		<string>0008</string>
+		<string>0058</string>
+		<string>0065</string>
+		<string>0072</string>
+		<string>0001</string>
+		<string>0037</string>
+		<string>000</string>
+		<string>0044</string>
+		<string>0051</string>
+		<string>0078</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -2501,11 +2648,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-11T01:44:27Z</date>
+	<date>2020-05-21T03:52:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUSkippedVersion</key>
-	<string>3.3.8beta4</string>
+	<string>3.3.10beta2</string>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2526,6 +2673,8 @@
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>TabTransform</key>
+	<integer>0</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -2566,6 +2715,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8beta3</string>
+	<string>3.3.10beta4</string>
 </dict>
 </plist>
