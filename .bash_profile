@@ -87,3 +87,21 @@ alias s='open http://localhost:8000 & python3 -m http.server'
 alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep dev,prod --upgrade && npm install && npm test'
 alias rd='rm -rf node_modules/ && npm install'
 alias prettier='npx prettier --write --trailing-comma all --single-quote'
+
+# brew install nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+
+# brew cask install google-cloud-sdk
+GOOGLE_CLOUD_SDK_PATH_BASH_INC='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+[ -s "${GOOGLE_CLOUD_SDK_PATH_BASH_INC}" ] && . "${GOOGLE_CLOUD_SDK_PATH_BASH_INC}"
+GOOGLE_CLOUD_SDK_COMPLETION_BASH_INC='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+[ -s "${GOOGLE_CLOUD_SDK_PATH_BASH_INC}" ] && . "${GOOGLE_CLOUD_SDK_PATH_BASH_INC}"
+
+# brew install bash-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# brew install pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
