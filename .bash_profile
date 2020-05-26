@@ -70,6 +70,7 @@ function tt() {
 # Git aliases
 alias g='git'
 alias gs='git status'
+alias gc='git commit --all'
 alias gfp='git push --force-with-lease' # "git force push"
 alias g7='git rev-parse --short=7 HEAD'
 alias recommit='git commit --all --amend --no-edit'
