@@ -47,7 +47,18 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "cSpell.userWords": [
     "arnesen",
-    "carnesen"
+    "auptix",
+    "carnesen",
+    "confs",
+    "geopy",
+    "getenv",
+    "guids",
+    "hocon",
+    "numpy",
+    "palletized",
+    "pythonjsonlogger",
+    "strptime",
+    "unpooled"
   ],
   "workbench.settings.editor": "json",
   "breadcrumbs.enabled": false,
@@ -57,9 +68,8 @@
   "python.linting.pylintArgs": [
     "--rcfile=/Users/chrisarnesen/AuptiX/work/dev/bin/.pylintrc"
   ],
-  "python.formatting.blackArgs": [
-    "--line-length",
-    "100"
-  ],
-  "editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace"
+  "python.formatting.provider": "black",
+  "editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "debug.console.fontSize": 14
 }
