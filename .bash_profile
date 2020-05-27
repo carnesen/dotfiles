@@ -67,25 +67,24 @@ function tt() {
   mv "$@" "${trash_dir}"
 }
 
-# Git aliases
-alias g='git'
-alias gs='git status'
-alias gc='git commit --all'
-alias gfp='git push --force-with-lease' # "git force push"
-alias g7='git rev-parse --short=7 HEAD'
-alias recommit='git commit --all --amend --no-edit'
-
+# Git commands
 function push() {
   local branch=$(git rev-parse --abbrev-ref HEAD)
   git push --set-upstream origin ${branch} "$@"
 }
+alias g='git'
+alias gs='git status'
+alias gc='git add . && git status && git commit && push'
+alias gfp='git push --force-with-lease' # "git force push"
+alias g7='git rev-parse --short=7 HEAD'
+alias recommit='git commit --all --amend --no-edit'
 
 # Open a Python http server on the current or specified directory (e.g. "s ~/GitHub/www/dist")
 alias s='open http://localhost:8000 & python3 -m http.server'
 
 # JavaScript development
 alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep dev,prod --upgrade && npm install && npm test'
-alias rd='rm -rf node_modules/ && npm install'
+alias rd='npm ci'
 alias prettier='npx prettier --write --trailing-comma all --single-quote'
 
 # brew install nvm
