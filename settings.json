@@ -31,7 +31,12 @@
     "editor.formatOnSave": true
   },
   "[typescript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.newWindowDimensions": "maximized",
