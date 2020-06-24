@@ -46,7 +46,7 @@
   "html.format.endWithNewline": true,
   "terminal.integrated.fontSize": 14,
   "editor.fontSize": 14,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -76,5 +76,9 @@
   "python.formatting.provider": "black",
   "editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "debug.console.fontSize": 14
+  "debug.console.fontSize": 14,
+  "java.requirements.JDK11Warning": false,
+  "java.semanticHighlighting.enabled": true,
+"java.configuration.checkProjectSettingsExclusions": false,
+"python.languageServer": "Microsoft"
 }

@@ -44,6 +44,7 @@ alias sp='. ~/.bash_profile' # "source profile"
 alias ep='edit ~/.bash_profile' # "edit profile"
 alias untar='tar xvfz'
 alias more='less'
+alias timestamp='date "+%F-%T"'
 
 # Generate a random six-charater lowercase string
 alias rand='cat /dev/random | LC_CTYPE=C tr -dc "[:lower:]" | head -c 6'
