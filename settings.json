@@ -3,6 +3,8 @@
 	"cSpell.userWords": [
 		"arnesen",
 		"carnesen",
+		"entrypoint",
+		"esnext",
 		"guids"
 	],
 	"debug.console.fontSize": 12,
@@ -11,7 +13,7 @@
 	"editor.fontSize": 12,
 	"editor.renderControlCharacters": true,
 	"editor.renderWhitespace": "all",
-	"editor.suggestSelection": "recentlyUsed",
+	"editor.suggestSelection": "first",
 	"editor.tabSize": 3,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
@@ -29,5 +31,6 @@
 	"workbench.settings.editor": "json",
 	"workbench.editor.showTabs": false,
 	"workbench.startupEditor": "none",
-	"workbench.colorTheme": "Night Owl"
+	"workbench.colorTheme": "Night Owl",
+	"vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration"
 }
