@@ -1,84 +1,33 @@
 {
-  "editor.formatOnSave": false,
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "editor.minimap.enabled": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.rulers": [
-    90,
-    120
-  ],
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[json]": {
-    "editor.formatOnSave": true,
-    "files.insertFinalNewline": true
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": true,
-    "files.insertFinalNewline": true
-  },
-  "[markdown]": {
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80
-  },
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.newWindowDimensions": "maximized",
-  "explorer.confirmDragAndDrop": false,
-  "editor.renderWhitespace": "all",
-  "editor.renderControlCharacters": false,
-  "html.format.endWithNewline": true,
-  "terminal.integrated.fontSize": 14,
-  "editor.fontSize": 14,
-  "window.zoomLevel": 1,
-  "workbench.startupEditor": "newUntitledFile",
-  "explorer.confirmDelete": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.userWords": [
-    "arnesen",
-    "auptix",
-    "carnesen",
-    "confs",
-    "geopy",
-    "getenv",
-    "guids",
-    "hocon",
-    "numpy",
-    "palletized",
-    "pythonjsonlogger",
-    "strptime",
-    "unpooled"
-  ],
-  "workbench.settings.editor": "json",
-  "breadcrumbs.enabled": false,
-  "workbench.editor.showTabs": true,
-  "editor.suggestSelection": "first",
-  "python.jediEnabled": false,
-  "python.linting.pylintArgs": [
-    "--rcfile=/Users/chrisarnesen/AuptiX/work/dev/bin/.pylintrc"
-  ],
-  "python.formatting.provider": "black",
-  "editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "debug.console.fontSize": 14,
-  "java.requirements.JDK11Warning": false,
-  "java.semanticHighlighting.enabled": true,
-"java.configuration.checkProjectSettingsExclusions": false,
-"python.languageServer": "Microsoft"
+	"breadcrumbs.enabled": true,
+	"cSpell.userWords": [
+		"arnesen",
+		"carnesen",
+		"guids"
+	],
+	"debug.console.fontSize": 12,
+	"editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 12,
+	"editor.renderControlCharacters": true,
+	"editor.renderWhitespace": "all",
+	"editor.suggestSelection": "recentlyUsed",
+	"editor.tabSize": 3,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"[python]": {
+		"editor.formatOnSave": true
+	},
+	"python.formatting.provider": "black",
+	"python.languageServer": "Microsoft",
+	"terminal.integrated.fontSize": 12,
+	"terminal.integrated.copyOnSelection": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"window.zoomLevel": 2,
+	"window.newWindowDimensions": "maximized",
+	"workbench.settings.editor": "json",
+	"workbench.editor.showTabs": false,
+	"workbench.startupEditor": "none",
+	"workbench.colorTheme": "Night Owl"
 }
