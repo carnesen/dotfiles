@@ -5,19 +5,36 @@
 		"carnesen",
 		"entrypoint",
 		"esnext",
-		"guids"
+		"guids",
+		"subcommands"
 	],
 	"debug.console.fontSize": 12,
+	"files.insertFinalNewline": true,
+	"editor.detectIndentation": false,
+	"editor.formatOnSave": true,
 	"editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 12,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": false,
 	"editor.renderControlCharacters": true,
-	"editor.renderWhitespace": "all",
+	"editor.renderWhitespace": "boundary",
+	"editor.rulers": [
+		80
+	],
 	"editor.suggestSelection": "first",
 	"editor.tabSize": 3,
+	"eslint.format.enable": true,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
 	"javascript.updateImportsOnFileMove.enabled": "always",
+	"[markdown]": {
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wordWrapColumn": 80
+	},
 	"[python]": {
 		"editor.formatOnSave": true
 	},
@@ -25,12 +42,17 @@
 	"python.languageServer": "Microsoft",
 	"terminal.integrated.fontSize": 12,
 	"terminal.integrated.copyOnSelection": true,
+	"[typescript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"window.zoomLevel": 2,
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
 	"window.newWindowDimensions": "maximized",
+	"window.zoomLevel": 2,
 	"workbench.settings.editor": "json",
 	"workbench.editor.showTabs": false,
 	"workbench.startupEditor": "none",
-	"workbench.colorTheme": "Night Owl",
-	"vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration"
+	"workbench.colorTheme": "Night Owl"
 }
