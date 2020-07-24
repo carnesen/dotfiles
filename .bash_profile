@@ -77,7 +77,10 @@ alias g='git'
 alias gs='git status'
 alias gc='git add . && git status && git commit && push'
 alias gfp='git push --force-with-lease' # "git force push"
-alias g7='git rev-parse --short=7 HEAD'
+function g7() {
+	local ref=${1:-HEAD}
+	git rev-parse --short=7 "${ref}"
+}
 alias recommit='git commit --all --amend --no-edit'
 alias git-remove-untracked='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -D'
 
