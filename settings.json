@@ -42,6 +42,7 @@
 	"python.languageServer": "Microsoft",
 	"terminal.integrated.fontSize": 12,
 	"terminal.integrated.copyOnSelection": true,
+	"terminal.integrated.inheritEnv": false,
 	"[typescript]": {
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
