@@ -30,9 +30,6 @@ function parse_git_branch() {
 }
 export PS1="\[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-# Python helpers
-alias pa='. $(pipenv --venv)/bin/activate' # "pipenv activate"
-
 # General-purpose helpers
 alias h='history'
 alias l='ls -alFGh'
