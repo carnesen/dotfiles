@@ -32,7 +32,10 @@
 	},
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"[markdown]": {
-		"editor.wordWrap": "wordWrapColumn",
+		"editor.insertSpaces": true,
+		"editor.quickSuggestions": false,
+		// https://code.visualstudio.com/updates/v1_10
+		"editor.wordWrap": "bounded",
 		"editor.wordWrapColumn": 80
 	},
 	"[python]": {
@@ -40,6 +43,7 @@
 	},
 	"python.formatting.provider": "black",
 	"python.languageServer": "Microsoft",
+	"python.terminal.activateEnvironment": false,
 	"terminal.integrated.fontSize": 12,
 	"terminal.integrated.copyOnSelection": true,
 	"terminal.integrated.inheritEnv": false,
