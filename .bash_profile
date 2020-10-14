@@ -17,7 +17,7 @@ shopt -s histappend
 shopt -s cmdhist
 export HISTCONTROL=erasedups
 export HISTIGNORE='l:ls:cd:..:...:....:exit:h:history'
-export HISTSIZE=10000
+export HISTSIZE=50000
 export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export PROMPT_COMMAND='history -a'
 
@@ -57,7 +57,8 @@ function iterm() {
 	open -a iTerm $DIR
 }
 
-# Move the specified paths to a MacOS trash folder. Is faster than "rm -rf" if large data.
+# "to trash": Move the specified paths to a MacOS trash folder. This is safer
+# and faster than "rm -rf"
 function tt() {
 	local random_string=$(rand)
 	local trash_dir=~/.Trash/${random_string}/
@@ -89,10 +90,6 @@ alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep 
 alias rd='npm ci'
 alias prettier='npx prettier --write --trailing-comma all --single-quote'
 
-# brew install nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"	# This loads nvm
-
 # brew cask install google-cloud-sdk
 GOOGLE_CLOUD_SDK_PATH_BASH_INC='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 [ -s "${GOOGLE_CLOUD_SDK_PATH_BASH_INC}" ] && . "${GOOGLE_CLOUD_SDK_PATH_BASH_INC}"
@@ -102,7 +99,7 @@ GOOGLE_CLOUD_SDK_COMPLETION_BASH_INC='/usr/local/Caskroom/google-cloud-sdk/lates
 # brew install bash-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# brew install pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-	eval "$(pyenv init -)"
+# brew install Schniz/tap/fnm
+if command -v fnm > /dev/null 2>&1; then
+	eval "$(fnm env --multi)"
 fi
