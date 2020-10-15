@@ -33,6 +33,7 @@ export PS1="\[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # General-purpose helpers
 alias h='history'
 alias l='ls -alFGh'
+alias cw='cd ~/GitHub/carnesen'
 alias ..='cd ..; l'
 alias ...='cd ../..; l'
 alias ....='cd ../../..; l'
