@@ -7,12 +7,16 @@ set -eo pipefail
 if command -v brew > /dev/null 2>&1; then
 	echo "Homebrew: already installed"
 else
+	echo "Installing Homebrew"
+	echo "Note this also installs XCode command-line tools"
+	echo "You'll be prompted to enter your admin password"
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 if [ -d "/usr/local/etc/bash_completion.d" ]; then
 	echo "Homebrew bash completion: already installed"
 else
+	echo "Installing bash completion"
 	brew install bash-completion
 fi
 
@@ -43,6 +47,8 @@ if [ "${SHELL}" == "${SHELL_DESIRED}" ]; then
 else
 	echo "About to change default shell for $(whoami). You'll be prompted for your password."
 	chsh -s "${SHELL_DESIRED}"
+	echo "Changed default shell. About to restart for it to take effect. You'll be prompted for your password."
+	sudo shutdown -r now
 fi
 
 GITHUB_CARNESEN_DIR="${HOME}/GitHub/carnesen"
@@ -56,6 +62,14 @@ else
 	git -C "${GITHUB_CARNESEN_DIR}" clone git@github.com:carnesen/dotfiles.git
 fi
 
+BASH_PROFILE_PATH="$HOME/.bash_profile"
+if [ -f "${BASH_PROFILE_PATH}" ]; then
+	echo "~/.bash_profile already exists"
+else
+	echo "Writing ~/.bash_profile"
+	echo ". \"${DOTFILES_DIR}/.bash_profile\"" > "${BASH_PROFILE_PATH}"
+fi
+
 if [ -d "/Applications/Moom.app" ]; then
 	echo "Moom: already installed"
 else
@@ -67,6 +81,8 @@ if command -v code > /dev/null 2>&1; then
 else
 	echo "Visual Studio Code: installing"
 	brew cask install visual-studio-code
+	# Launch Visual Studio Code so that it creates its directories
+	code "${DOTFILES_DIR}"
 fi
 
 VS_CODE_SETTINGS_FILE_PATH="${HOME}/Library/Application Support/Code/User/settings.json"
@@ -125,7 +141,8 @@ else
 	brew install git
 fi
 
-GIT_USER_NAME="$(git config --global --get user.name)"
+# "git config" fails if the property is not set
+GIT_USER_NAME="$(git config --global --get user.name || true)"
 if [ -n "${GIT_USER_NAME}" ]; then
 	echo "Git: user.name is ${GIT_USER_NAME}"
 else
@@ -133,7 +150,7 @@ else
 	git config --global user.name "Chris Arnesen"
 fi
 
-GIT_USER_EMAIL="$(git config --global --get user.email)"
+GIT_USER_EMAIL="$(git config --global --get user.email || true)"
 if [ -n "${GIT_USER_EMAIL}" ]; then
 	echo "Git: user.email is ${GIT_USER_EMAIL}"
 else
@@ -146,6 +163,13 @@ if command -v gh > /dev/null 2>&1; then
 else
 	echo "GitHub CLI (gh): installing"
 	brew install gh
+fi
+
+if command -v github > /dev/null 2>&1; then
+	echo "GitHub Desktop: already installed"
+else
+	echo "GitHub Desktop: installing"
+	brew install --cask github
 fi
 
 if [ -d "${GITHUB_CARNESEN_DIR}/dev" ]; then
