@@ -76,6 +76,15 @@ else
 	brew cask install moom
 fi
 
+if [ -d "/Applications/Docker.app" ]; then
+	echo "Docker Desktop: already installed"
+else
+	echo "Docker Desktop: installing"
+	brew cask install docker
+	# Launch Docker Desktop to complete the installation
+	open "/Applications/Docker.app"
+fi
+
 if command -v code > /dev/null 2>&1; then
 	echo "Visual Studio Code: already installed"
 else
