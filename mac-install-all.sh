@@ -187,3 +187,10 @@ else
 	echo "@carnesen/dev: installing"
 	git -C "${GITHUB_CARNESEN_DIR}" clone git@github.com:carnesen/dev.git
 fi
+
+if command -v wget > /dev/null 2>&1; then
+	echo "wget: already installed"
+else
+	echo "wget: installing"
+	brew install wget
+fi
