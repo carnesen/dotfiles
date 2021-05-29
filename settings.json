@@ -13,7 +13,7 @@
 	"editor.detectIndentation": false,
 	"editor.formatOnSave": true,
 	"editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
-	"editor.fontLigatures": true,
+	"editor.fontLigatures": false,
 	"editor.fontSize": 11.5,
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
@@ -52,9 +52,10 @@
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
 	"window.newWindowDimensions": "maximized",
-	"window.zoomLevel": 4,
+	"window.zoomLevel": 3,
 	"workbench.settings.editor": "json",
 	"workbench.editor.showTabs": false,
 	"workbench.startupEditor": "none",
-	"workbench.colorTheme": "Night Owl"
+	"workbench.colorTheme": "Night Owl",
+	"extensions.ignoreRecommendations": true
 }
