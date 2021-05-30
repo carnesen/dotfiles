@@ -74,6 +74,7 @@ function push() {
 }
 alias g='git'
 alias gb='git switch -c'
+alias gm='git switch master && git pull'
 alias gs='git status'
 alias gc='git add . && git status && git commit && push'
 alias gfp='git push --force-with-lease' # "git force push"
