@@ -2,6 +2,8 @@
 
 set -eo pipefail
 
+# Manual configuration:
+# - https://www.cnet.com/how-to/7-macos-display-settings-to-help-you-see-your-mac-better/
 # This script sets up a new Mac
 
 if command -v brew > /dev/null 2>&1; then
@@ -24,21 +26,21 @@ if [ -d "/Applications/Firefox.app" ]; then
 	echo "Firefox: already installed"
 else
 	echo "Installing Firefox"
-	brew cask install firefox
+	brew install --cask firefox
 fi
 
 if [ -d "/Applications/Google Chrome.app" ]; then
 	echo "Google Chrome: already installed"
 else
 	echo "Installing Google Chrome"
-	brew cask install google-chrome
+	brew install --cask google-chrome
 fi
 
 if [ -d "/Applications/iTerm.app" ]; then
 	echo "iTerm2: already installed"
 else
 	echo "Installing iTerm2"
-	brew cask install iterm2
+	brew install --cask iterm2
 fi
 
 SHELL_DESIRED="/bin/bash"
@@ -73,14 +75,14 @@ fi
 if [ -d "/Applications/Moom.app" ]; then
 	echo "Moom: already installed"
 else
-	brew cask install moom
+	brew install --cask moom
 fi
 
 if [ -d "/Applications/Docker.app" ]; then
 	echo "Docker Desktop: already installed"
 else
 	echo "Docker Desktop: installing"
-	brew cask install docker
+	brew install --cask docker
 	# Launch Docker Desktop to complete the installation
 	open "/Applications/Docker.app"
 fi
@@ -89,7 +91,7 @@ if command -v code > /dev/null 2>&1; then
 	echo "Visual Studio Code: already installed"
 else
 	echo "Visual Studio Code: installing"
-	brew cask install visual-studio-code
+	brew install --cask visual-studio-code
 	# Launch Visual Studio Code so that it creates its directories
 	code "${DOTFILES_DIR}"
 fi
@@ -139,7 +141,7 @@ if command -v gcloud > /dev/null 2>&1; then
 	echo "Google Cloud SDK: already installed"
 else
 	echo "Google Cloud SDK: installing"
-	brew cask install google-cloud-sdk
+	brew install --cask google-cloud-sdk
 fi
 
 # The MacOS Git version is old. Install the latest with Homebrew.
@@ -194,3 +196,5 @@ else
 	echo "wget: installing"
 	brew install wget
 fi
+
+git config pull.rebase true
