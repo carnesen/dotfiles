@@ -54,14 +54,23 @@ else
 fi
 
 GITHUB_CARNESEN_DIR="${HOME}/GitHub/carnesen"
-DOTFILES_DIR="${GITHUB_CARNESEN_DIR}/dotfiles"
+GITHUB_CARNESEN_DEV_DIR="${HOME}/GitHub/carnesen/dev"
 
+if [ -d "${GITHUB_CARNESEN_DEV_DIR}" ]; then
+	echo "@carnesen/dev: already exists"
+else
+	echo "@carnesen/dev: installing"
+	git -C "${GITHUB_CARNESEN_DIR}" clone git@github.com:carnesen/dev.git
+	npm --prefix "${GITHUB_CARNESEN_DEV_DIR}" ci
+	npm --prefix "${GITHUB_CARNESEN_DEV_DIR}" run dev -- remotes clone
+fi
+
+DOTFILES_DIR="${GITHUB_CARNESEN_DIR}/dotfiles"
 if [ -d "${DOTFILES_DIR}" ]; then
 	echo "Dotfiles directory already exists"
 else
-	echo "Cloning dotfiles to ${GITHUB_CARNESEN_DIR}"
-	mkdir -p "${GITHUB_CARNESEN_DIR}"
-	git -C "${GITHUB_CARNESEN_DIR}" clone git@github.com:carnesen/dotfiles.git
+	echo "FATAL ERROR: Expected ${GITHUB_CARNESEN_DIR} directory to have been cloned by @carnesen/dev"
+	exit 1
 fi
 
 BASH_PROFILE_PATH="$HOME/.bash_profile"
@@ -174,6 +183,7 @@ if command -v gh > /dev/null 2>&1; then
 else
 	echo "GitHub CLI (gh): installing"
 	brew install gh
+	gh auth login
 fi
 
 if command -v github > /dev/null 2>&1; then
@@ -181,13 +191,6 @@ if command -v github > /dev/null 2>&1; then
 else
 	echo "GitHub Desktop: installing"
 	brew install --cask github
-fi
-
-if [ -d "${GITHUB_CARNESEN_DIR}/dev" ]; then
-	echo "@carnesen/dev: already exists"
-else
-	echo "@carnesen/dev: installing"
-	git -C "${GITHUB_CARNESEN_DIR}" clone git@github.com:carnesen/dev.git
 fi
 
 if command -v wget > /dev/null 2>&1; then
