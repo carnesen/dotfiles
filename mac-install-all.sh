@@ -96,6 +96,13 @@ else
 	open "/Applications/Docker.app"
 fi
 
+if [ -d "/Applications/Slack.app" ]; then
+	echo "Slack: already installed"
+else
+	echo "Slack: installing"
+	brew install --cask slack
+fi
+
 if command -v code > /dev/null 2>&1; then
 	echo "Visual Studio Code: already installed"
 else
