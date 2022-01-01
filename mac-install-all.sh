@@ -207,4 +207,11 @@ else
 	brew install wget
 fi
 
+if command -v gpg > /dev/null 2>&1; then
+	echo "GnuPG: already installed"
+else
+	echo "GnuPG: installing"
+	brew install gnupg
+fi
+
 git config pull.rebase true
