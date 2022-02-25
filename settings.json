@@ -57,5 +57,6 @@
 	"workbench.editor.showTabs": false,
 	"workbench.startupEditor": "none",
 	"workbench.colorTheme": "Night Owl",
-	"extensions.ignoreRecommendations": true
+	"extensions.ignoreRecommendations": true,
+	"git.autofetch": true
 }

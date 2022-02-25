@@ -74,6 +74,8 @@ function push() {
 }
 alias g='git'
 alias gb='git switch -c'
+# "Git delete tag"
+alias gdt='git push --delete origin'
 alias gm='git switch master && git pull'
 alias gs='git status'
 alias gc='git add . && git status && git commit && push'
