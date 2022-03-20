@@ -77,6 +77,7 @@ alias gb='git switch -c'
 # "Git delete tag"
 alias gdt='git push --delete origin'
 alias gm='git switch master && git pull'
+alias gmn='git switch main && git pull'
 alias gs='git status'
 alias gc='git add . && git status && git commit && push'
 alias gfp='git push --force-with-lease' # "git force push"
