@@ -107,5 +107,5 @@ GOOGLE_CLOUD_SDK_COMPLETION_BASH_INC='/usr/local/Caskroom/google-cloud-sdk/lates
 
 # brew install Schniz/tap/fnm
 if command -v fnm > /dev/null 2>&1; then
-	eval "$(fnm env --multi)"
+	eval "$(fnm env)"
 fi
