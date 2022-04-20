@@ -80,6 +80,7 @@ alias gm='git switch master && git pull'
 alias gmn='git switch main && git pull'
 alias gs='git status'
 alias gc='git add . && git status && git commit && push'
+alias gv='git branch -v'
 alias gfp='git push --force-with-lease' # "git force push"
 function g7() {
 	local ref=${1:-HEAD}
@@ -95,6 +96,9 @@ alias s='open http://localhost:8000 & python3 -m http.server'
 alias ud='rm -rf node_modules/ package-lock.json && npx npm-check-updates --dep dev,prod --upgrade && npm install && npm test'
 alias rd='npm ci'
 alias prettier='npx prettier --write --trailing-comma all --single-quote'
+
+# Terraform
+alias tf='terraform'
 
 # brew cask install google-cloud-sdk
 GOOGLE_CLOUD_SDK_PATH_BASH_INC='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
