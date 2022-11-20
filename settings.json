@@ -16,7 +16,6 @@
 	"editor.fontLigatures": false,
 	"editor.fontSize": 11.5,
 	"editor.insertSpaces": false,
-	"editor.minimap.enabled": false,
 	"editor.renderControlCharacters": true,
 	"editor.renderWhitespace": "boundary",
 	"editor.rulers": [
@@ -33,7 +32,11 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"[markdown]": {
 		"editor.insertSpaces": true,
-		"editor.quickSuggestions": false,
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		},
 		// https://code.visualstudio.com/updates/v1_10
 		"editor.wordWrap": "bounded",
 		"editor.wordWrapColumn": 80
@@ -58,5 +61,10 @@
 	"workbench.startupEditor": "none",
 	"workbench.colorTheme": "Night Owl",
 	"extensions.ignoreRecommendations": true,
-	"git.autofetch": true
+	"git.autofetch": true,
+	"editor.minimap.enabled": false,
+	"remote.SSH.defaultExtensions": [
+		"gitpod.gitpod-remote-ssh"
+	],
+	"remote.SSH.configFile": "/var/folders/02/5w_35bgn3ljf6qwsdz0zwnvh0000gn/T/gitpod_ssh_config-55098-6ebc0hnXjcpN"
 }
